@@ -7,6 +7,7 @@
 
 # testing
 /coverage
+/materiales-en-bruto
 
 # production
 /build
