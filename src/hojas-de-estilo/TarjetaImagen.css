@@ -1,0 +1,20 @@
+.contenedor-tarjeta-imagen {
+    height: 480px;
+    background-image: url(../imagenes/practica-de-habla-grande.jpg);
+    filter: grayscale(100%);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 15px 25px;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: left;
+}
+
+.contenedor-tarjeta-imagen h3{
+  color: #fff;
+}
+
+/*TODO hacer responsive*/

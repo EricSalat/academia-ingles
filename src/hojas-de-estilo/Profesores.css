@@ -1,0 +1,98 @@
+.contenedor-profesores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border: 2px solid var(--grisOscuro);
+  border-radius: 15px;
+  padding: 15px 25px;
+  margin-top: 1.5rem;
+  gap: 1rem;
+  
+}
+
+.ficha-profesores p {
+  margin:0;
+  line-height: 1.4;
+}
+.ficha-profesores img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  /* filter: grayscale(100); */
+}
+
+.ficha-profesores img:hover {
+  border: 2px solid var(--lila);
+}
+
+.contenedor-profesores-descripcion {
+  background-color: var(--gris);
+  border-radius: 15px;
+  padding: 15px 25px;
+  margin-top: 1.5rem;
+  gap: 1rem;
+  
+}
+
+.tarjeta-profesores {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 23px;
+  
+
+}
+.tarjeta-profesores img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 20px;
+  
+}
+
+.tarjeta-profesores p:nth-of-type(1) {
+  font-size: 0.8rem;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.tarjeta-profesores p:nth-of-type(2),.tarjeta-profesores p:nth-of-type(3) {
+  font-size: 1.6rem;
+  margin: 0;
+  line-height: 1.2;
+}
+.logros-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logros-lista p {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--grisOscuro);
+  background-color: inherit;
+  border: 2px solid var(--grisOscuro);
+  border-radius: 50px;
+  padding: 4px 20px;
+  margin-right: 20px;
+  width: fit-content;
+  user-select: none;
+  width: fit-content;
+  
+}
+
+.logros-lista p:hover {
+  background-color: var(--grisOscuro);
+  color: #fff;
+}
+
+.logros-contenedor > p {
+  border: none;
+  font-weight: 700;
+  padding: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+

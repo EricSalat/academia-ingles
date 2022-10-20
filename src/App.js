@@ -1,23 +1,79 @@
-import logo from './logo.svg';
+//Faltará Logo en svg
+import React from "react";
+import BotonNavegacion from "./componentes/BotonNavegacion";
+import Hero from "./componentes/Hero";
+import TestIngles from "./componentes/TestIngles";
+import TarjetaCentral from "./componentes/TarjetaCentral";
+import TarjetaImagen from "./componentes/TarjetaImagen";
+import TarjetaNiveles from "./componentes/TarjetaNiveles";
+import Profesores from "./componentes/Profesores";
+import ProfesoresDescripcion from "./componentes/ProfesoresDescripcion";
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="container">
+      <header>
+        <p className="h2">ACADEMIA</p>
+        <nav className="nav-desktop">
+            <BotonNavegacion texto="Las clases" />
+            <BotonNavegacion texto="Los profesores" />
+            <BotonNavegacion texto="Precio" />
+        </nav>
       </header>
+      <main>
+        <section>
+          <Hero />
+          <TestIngles />
+        </section>
+          <section>
+            <TarjetaCentral
+              titulo="Enfócate en tu especialización y necesidades. "
+              primerTexto="Después de la prueba inicial y una lección de prueba gratuita, el profesor seleccionará un grupo específicamente para tus tareas. "
+              segundoTexto="¡Aprenderás solo lo que te es realmente útil para obtener un certificado internacional, trabajar o estudiar en el extranjero! "
+            />
+            <TarjetaCentral
+              titulo="Materiales didácticos y modernos "
+              primerTexto="La capacitación se lleva a cabo con los libros de texto de las principales editoriales internacionales y materiales originales (artículos, fragmentos de audio y vídeo). "
+              segundoTexto="La combinación de ejercicios y tecnologías modernas te ayudará a aprender y comprender el inglés. Hablarás con competencia y confianza a buen ritmo. "
+            />
+            <TarjetaImagen
+              titulo="Práctica de habla intensiva y variada"
+             />
+             <TarjetaNiveles
+              titulo="Oportunidad de prepararse para un examen internacional"
+              primerTexto="Durante la capacitación podrá no solo mejorar su inglés, sino también comprender la estructura y complejidades del examen elegido."
+              segundoTexto="El profesor te ayudará a practicar la técnica de pasar cada etapa del examen y compartir secretos y trucos de vida."
+              />
+          </section>
+          <section>
+            <div className="contenedor-profesores">
+              <Profesores
+                nombreProfesor="Ekaterina"
+                apellidoProfesor="Anatolyeva"
+                numProfesor="1"
+               />
+              <Profesores
+                nombreProfesor="Juana"
+                apellidoProfesor="Rodriguez"
+                numProfesor="2"
+               />
+              <Profesores
+                nombreProfesor="Michael"
+                apellidoProfesor="Boston"
+                numProfesor="3"
+               />
+            </div>
+            <ProfesoresDescripcion
+            nombreProfesor="Ekaterina"
+            apellidoProfesor="Anatolyeva"
+            numProfesor="1"
+           />
+          </section>
+      </main>
+    </div>
     </div>
   );
 }

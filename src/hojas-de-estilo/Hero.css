@@ -1,0 +1,29 @@
+.container-hero {
+  background-color: var(--gris);
+  border-radius: 15px;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  margin-top: 1rem;
+}
+
+@media (min-width: 992px) {
+  .container-hero {
+    padding: 30px 60px;
+  }
+
+  div p:first-child{
+    font-size: 1.5rem;
+  }
+}
+
+div h1 {
+  font-size: 3rem;
+}
+
+div .hero-text p:first-child{
+  font-size: 1.5rem;
+}
