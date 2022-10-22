@@ -8,10 +8,14 @@ import TarjetaImagen from "./componentes/TarjetaImagen";
 import TarjetaNiveles from "./componentes/TarjetaNiveles";
 import Profesores from "./componentes/Profesores";
 import ProfesoresDescripcion from "./componentes/ProfesoresDescripcion";
+import Clases from "./componentes/Clases";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+
 function App() {
+
   return (
     <div className="App">
     <div className="container">
@@ -71,6 +75,27 @@ function App() {
             apellidoProfesor="Anatolyeva"
             numProfesor="1"
            />
+          </section>
+          <section>
+            <div className="contenedor-clases">
+              <h2>Matrícula y costes</h2>
+                <Clases 
+                  clases="grupales"
+                  curso="Curso general"
+                  disponibilidad="Disponible"
+                  duracionCurso="1 mes. 2 lecciones por semana"
+                  duracionLeccion="90"
+                  precio="263"
+                  horario="Lunes y Viernes. 19:30 - 21:00h"                />
+                <Clases 
+                  clases="individuales"
+                  curso="Curso intensivo"
+                  disponibilidad="Disponible"
+                  duracionCurso="A acordar"
+                  duracionLeccion="60 / 90"
+                  precio="1 lección - 50"
+                  horario="A acordar"                />
+            </div>
           </section>
       </main>
     </div>

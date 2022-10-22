@@ -7,6 +7,8 @@
   --verde: #edf993;
   --grisOscuro: #2b2b2e;
   --font: 'Kanit', sans-serif;
+  --componentsPadding: 15px 25px;
+  --borderRadius: 15px;
   /* --texto: # */
 }
 
@@ -20,6 +22,10 @@
 html,
 body {
   background-color: #fff;
+}
+
+.inactivo {
+  display: none;
 }
 
 header {
@@ -44,3 +50,12 @@ nav {
   display: none;
 }
 
+.contenedor-clases {
+  background-color: var(--gris);
+  border-radius: 15px;
+  margin-top: 1.5rem;
+}
+
+.contenedor-clases h2 {
+  padding: var(--componentsPadding);
+}

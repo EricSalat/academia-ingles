@@ -1,0 +1,27 @@
+.card-clases{
+  background-color: var(--lila);
+  padding: var(--componentsPadding);
+  border-radius: var(--borderRadius);
+  margin-top: 1.5rem;
+}
+.card-clases div {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+.card-clases div:last-of-type {
+  justify-content: flex-end;
+}
+
+.card-clases button {
+  background-color: inherit;
+  color: var(--grisOscuro);
+}
+.card-clases button:hover {
+  background-color: var(--grisOscuro);
+  color: #fff;
+}
+
+.card-clases > div > p {
+  line-height: 1.2
+}

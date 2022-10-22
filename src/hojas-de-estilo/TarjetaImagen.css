@@ -4,8 +4,8 @@
     filter: grayscale(100%);
     background-position: center;
     background-size: cover;
-    border-radius: 15px;
-    padding: 15px 25px;
+    border-radius: var(--borderRadius);
+    padding: var(--componentsPadding);
     margin-top: 1.5rem;
     display: flex;
     flex-direction: column;

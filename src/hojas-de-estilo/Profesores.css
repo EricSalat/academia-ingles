@@ -4,11 +4,15 @@
   align-items: center;
   text-align: center;
   border: 2px solid var(--grisOscuro);
-  border-radius: 15px;
-  padding: 15px 25px;
+  border-radius: var(--borderRadius);
+  padding: var(--componentsPadding);
   margin-top: 1.5rem;
   gap: 1rem;
   
+}
+
+.ficha-profesores {
+  cursor: pointer;
 }
 
 .ficha-profesores p {
@@ -20,7 +24,6 @@
   height: 85px;
   border-radius: 50px;
   border: 2px solid transparent;
-  cursor: pointer;
   /* filter: grayscale(100); */
 }
 
@@ -31,7 +34,7 @@
 .contenedor-profesores-descripcion {
   background-color: var(--gris);
   border-radius: 15px;
-  padding: 15px 25px;
+  padding: var(--componentsPadding);
   margin-top: 1.5rem;
   gap: 1rem;
   
@@ -42,6 +45,7 @@
   justify-content: space-around;
   align-items: center;
   margin-bottom: 23px;
+
   
 
 }

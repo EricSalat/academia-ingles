@@ -1,7 +1,10 @@
 import React from "react";
 import "../hojas-de-estilo/Profesores.css";
 
+
 function ProfesoresDescripcion ( {nombreProfesor,numProfesor, apellidoProfesor} ) {
+  
+ 
   return(
     <div className="contenedor-profesores-descripcion">
       <div className="tarjeta-profesores">
