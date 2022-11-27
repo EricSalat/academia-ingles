@@ -10,6 +10,10 @@ nav button, div button {
   cursor: pointer;
 }
 
+header nav button {
+  margin: 0 4px;
+}
+
 nav button:hover, div button:hover {
   color: var(--grisOscuro);
   background-color: inherit;
@@ -18,3 +22,4 @@ nav button:hover, div button:hover {
   background-color: var(--verde);
   color: var(--grisOscuro);
 } */
+

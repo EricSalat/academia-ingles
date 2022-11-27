@@ -3,7 +3,7 @@ import "../hojas-de-estilo/Clases.css";
 
 function Clases(props) {
   return(
-    <div className="card-clases">
+    <div className="card-clases" style={props.style}>
       <h3>Clases {props.clases}</h3>
       <p>{props.curso}</p>
 

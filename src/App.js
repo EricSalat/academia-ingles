@@ -1,5 +1,6 @@
 //Faltará Logo en svg
 import React from "react";
+import Header from "./componentes/Header";
 import BotonNavegacion from "./componentes/BotonNavegacion";
 import Hero from "./componentes/Hero";
 import TestIngles from "./componentes/TestIngles";
@@ -14,19 +15,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
+
 function App() {
 
   return (
     <div className="App">
     <div className="container">
-      <header>
-        <p className="h2">ACADEMIA</p>
-        <nav className="nav-desktop">
-            <BotonNavegacion texto="Las clases" />
-            <BotonNavegacion texto="Los profesores" />
-            <BotonNavegacion texto="Precio" />
-        </nav>
-      </header>
+      <Header />
       <main>
         <section>
           <Hero />
@@ -35,11 +30,13 @@ function App() {
           <section>
             <TarjetaCentral
               titulo="Enfócate en tu especialización y necesidades. "
+              style={{ backgroundColor: "var(--verde)"}}
               primerTexto="Después de la prueba inicial y una lección de prueba gratuita, el profesor seleccionará un grupo específicamente para tus tareas. "
               segundoTexto="¡Aprenderás solo lo que te es realmente útil para obtener un certificado internacional, trabajar o estudiar en el extranjero! "
             />
             <TarjetaCentral
               titulo="Materiales didácticos y modernos "
+              style={{ backgroundColor: "var(--gris)"}}
               primerTexto="La capacitación se lleva a cabo con los libros de texto de las principales editoriales internacionales y materiales originales (artículos, fragmentos de audio y vídeo). "
               segundoTexto="La combinación de ejercicios y tecnologías modernas te ayudará a aprender y comprender el inglés. Hablarás con competencia y confianza a buen ritmo. "
             />
@@ -86,7 +83,8 @@ function App() {
                   duracionCurso="1 mes. 2 lecciones por semana"
                   duracionLeccion="90"
                   precio="263"
-                  horario="Lunes y Viernes. 19:30 - 21:00h"                />
+                  horario="Lunes y Viernes. 19:30 - 21:00h"
+                  style={{backgroundColor: "var(--lila)"}}                />
                 <Clases 
                   clases="individuales"
                   curso="Curso intensivo"
@@ -94,7 +92,10 @@ function App() {
                   duracionCurso="A acordar"
                   duracionLeccion="60 / 90"
                   precio="1 lección - 50"
-                  horario="A acordar"                />
+                  horario="A acordar"
+                  style={{backgroundColor: "var(--verde)"}}                 
+
+                  />
             </div>
           </section>
       </main>

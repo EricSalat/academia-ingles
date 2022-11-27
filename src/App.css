@@ -28,27 +28,7 @@ body {
   display: none;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: antiquewhite;
-}
 
-nav {
-  display: flex;
-  gap: 1rem;
-}
-
-nav {
-  list-style-type: none;
-  text-transform: uppercase;
-  justify-content: space-around;
-}
-
-.nav-desktop {
-  display: none;
-}
 
 .contenedor-clases {
   background-color: var(--gris);
