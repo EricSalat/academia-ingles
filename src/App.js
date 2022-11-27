@@ -22,10 +22,14 @@ function App() {
 
   
   const [menuCollapse, setMenuCollapse] = useState(false);
-
   const menuIconClick = () => {
     menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
   };
+
+  const [profesorOne, setProfesorOne] = useState(true);
+  const [profesorTwo, setProfesorTwo] = useState(false)
+  const [profesorThree, setProfesorThree] = useState(false);
+
 
 
   return (
@@ -71,23 +75,55 @@ function App() {
                 nombreProfesor="Ekaterina"
                 apellidoProfesor="Anatolyeva"
                 numProfesor="1"
+                onclick={() => {setProfesorOne(true);setProfesorTwo(false); setProfesorThree(false)}}
                />
               <Profesores
                 nombreProfesor="Juana"
                 apellidoProfesor="Rodriguez"
                 numProfesor="2"
+                onclick={() => {setProfesorOne(false);setProfesorTwo(true); setProfesorThree(false)}}
+
                />
               <Profesores
                 nombreProfesor="Michael"
                 apellidoProfesor="Boston"
                 numProfesor="3"
+                onclick={() => {setProfesorOne(false);setProfesorTwo(false); setProfesorThree(true)}}
                />
             </div>
-            <ProfesoresDescripcion
-            nombreProfesor="Ekaterina"
-            apellidoProfesor="Anatolyeva"
-            numProfesor="1"
-           />
+
+    
+            { profesorOne ? (
+                  <ProfesoresDescripcion
+                    nombreProfesor="Ekaterina"
+                    apellidoProfesor="Anatolyeva"
+                    numProfesor="1"
+                     />
+                ) : ( 
+                null
+                )}
+
+   
+                { profesorTwo ? (
+                  <ProfesoresDescripcion
+                    nombreProfesor="Juana"
+                    apellidoProfesor="Rodriguez"
+                    numProfesor="2"
+                     />
+                ) : ( 
+                null
+                )}
+     
+                { profesorThree ? (
+                  <ProfesoresDescripcion
+                    nombreProfesor="Michael"
+                    apellidoProfesor="Boston"
+                    numProfesor="3"
+                     />
+                ) : ( 
+                null
+                )}
+
           </section>
           <section id="clases">
             <div className="contenedor-clases">
@@ -100,7 +136,11 @@ function App() {
                   duracionLeccion="90"
                   precio="263"
                   horario="Lunes y Viernes. 19:30 - 21:00h"
-                  style={{backgroundColor: "var(--lila)"}}                />
+                  style={{backgroundColor: "var(--lila)", 
+                  // border: "2px solid #B1ABFD" 
+                  // boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px;"
+                  }}              
+                  />
                 <Clases 
                   clases="individuales"
                   curso="Curso intensivo"

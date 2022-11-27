@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../hojas-de-estilo/Profesores.css";
+import ProfesoresDescripcion from "./ProfesoresDescripcion";
 
 // const fichaProfesores = document.getElementsByClassName("ficha-profesores");
 // const profesDescripcion = document.querySelector(".contenedor-profesores-descripcion");
@@ -13,11 +14,11 @@ import "../hojas-de-estilo/Profesores.css";
 // };
 
 
-const Profesores = ({nombreProfesor,numProfesor, apellidoProfesor}) => {
+const Profesores = ({nombreProfesor,numProfesor, apellidoProfesor, onclick}) => {
 
   return(
-        <div className="ficha-profesores">
-          <div className="perfil-profesor">
+        <div className="ficha-profesores" >
+          <div className="perfil-profesor" onClick={onclick}>
             <img src={require(`../imagenes/profesor-${numProfesor}.jpg`)}>
             </img>
             <p>{nombreProfesor}</p>

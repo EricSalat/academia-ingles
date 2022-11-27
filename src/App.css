@@ -2,7 +2,7 @@
 
 :root {
   --gris: #f5f5f5;
-  --lila: #c3beff;
+  --lila: #C3BEFF;
   --azul: #dbe5f2;
   --verde: #edf993;
   --grisOscuro: #2b2b2e;
@@ -39,3 +39,6 @@ body {
 .contenedor-clases h2 {
   padding: var(--componentsPadding);
 }
+
+
+/*TODO: AÑADIR SOMBRAS A LOS COMPONETES-CAJAS*/
