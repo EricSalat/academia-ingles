@@ -4,7 +4,7 @@ import "../hojas-de-estilo/TarjetaNiveles.css";
 
 const TarjetaNiveles = ({titulo, primerTexto, segundoTexto}) => {
   return(
-    <div className="contenedor-tarjeta-niveles">
+    <div className="contenedor-tarjeta-niveles" id="niveles">
       <div>
         <h3>{titulo}</h3>
         <p>{primerTexto}</p>

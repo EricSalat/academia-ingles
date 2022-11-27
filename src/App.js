@@ -1,5 +1,6 @@
 //Faltará Logo en svg
 import React from "react";
+import { useState } from "react";
 import Header from "./componentes/Header";
 import BotonNavegacion from "./componentes/BotonNavegacion";
 import Hero from "./componentes/Hero";
@@ -19,17 +20,30 @@ import MenuMobile from "./componentes/MenuMobile";
 
 function App() {
 
+  
+  const [menuCollapse, setMenuCollapse] = useState(false);
+
+  const menuIconClick = () => {
+    menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
+  };
+
+
   return (
     <div className="App">
-    <MenuMobile />
+    <div>
+      { menuCollapse ? (
+        <MenuMobile onClick={menuIconClick} />
+        ) : (
+        null
+        )}
+    </div>
+    
     <div className="container">
-      <Header />
+      <Header onclick={menuIconClick} />
       <main>
-        <section>
-          <Hero />
-          <TestIngles />
-        </section>
-          <section>
+        <Hero />
+        <TestIngles />
+          <section id="">
             <TarjetaCentral
               titulo="Enfócate en tu especialización y necesidades. "
               style={{ backgroundColor: "var(--verde)"}}
@@ -51,7 +65,7 @@ function App() {
               segundoTexto="El profesor te ayudará a practicar la técnica de pasar cada etapa del examen y compartir secretos y trucos de vida."
               />
           </section>
-          <section>
+          <section id="profesores">
             <div className="contenedor-profesores">
               <Profesores
                 nombreProfesor="Ekaterina"
@@ -75,7 +89,7 @@ function App() {
             numProfesor="1"
            />
           </section>
-          <section>
+          <section id="clases">
             <div className="contenedor-clases">
               <h2>Matrícula y costes</h2>
                 <Clases 
