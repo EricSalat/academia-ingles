@@ -12,6 +12,7 @@ import ProfesoresDescripcion from "./componentes/ProfesoresDescripcion";
 import Clases from "./componentes/Clases";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import MenuMobile from "./componentes/MenuMobile";
 
 
 
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div className="App">
+    <MenuMobile />
     <div className="container">
       <Header />
       <main>

@@ -1,0 +1,25 @@
+.mobile-menu-modal {
+  background-color: var(--grisOscuro);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 60%;
+  height: 100vh;
+  align-self: flex-end;
+
+}
+
+.mobile-menu-modal p {
+  color: #fff;
+}
+.mobile-menu-modal li {
+  color: #fff;
+  list-style-type: none;
+}
+.mobile-menu-top {
+    /* display: block; */
+}
+.mobile-menu-bottom {
+    /* display: block; */
+    flex-direction: column;
+}

@@ -7,6 +7,7 @@ import { CgMenuRound} from "react-icons/cg";
 export default function Header() {
    
   
+  
   return (
     <header>
         <p className="h2">ACADEMIA</p>
@@ -16,7 +17,7 @@ export default function Header() {
             <BotonNavegacion texto="Precio" />
         </nav>
             <div className="mobile-menu">
-              <CgMenuRound style={{ color: "var(--grisOscuro)" 
+              <CgMenuRound style={{ color: "var(--grisOscuro)", cursor: "pointer" 
               }} 
               size="40"
                />
